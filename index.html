@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+  <title>Train Tracks</title>
+</head>
+
+<body>
+
+  <!--Jumbotron-->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Homework 7 - Train Scheduler</h1>
+      <p class="lead"></p>
+    </div>
+  </div>
+
+
+
+  <!--Table-->
+  <h3>Today's Train Schedule</h3>
+  <div class="container-fluid">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Train Name:</th>
+        <th scope="col">Destination:</th>
+        <th scope="col">Frequency (min):</th>
+        <th scope="col">Next Arrival:</th>
+        <th scope="col">Minutes Away:</th>
+      </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+  </table>
+  </div>
+<br>
+  <!--Form-->
+  <form>
+    <h3>Add Train</h3>
+    <div class="container-fluid">
+    <div class="form-group">
+      <label for="train-name">Train Name:</label>
+      <input type="name" class="form-control" id="train-name" placeholder="Train Name">
+    </div>
+    <div class="form-group">
+      <label for="destination">Destination:</label>
+      <input type="location" class="form-control" id="destination" placeholder="Destination">
+    </div>
+    <div class="form-group">
+      <label for="departure-time">First Run of day (HH:mm - military time):</label>
+      <input type="time" class="form-control" id="departure-time" placeholder="HH:mm">
+    </div>
+    <div class="form-group">
+      <label for="frequency">Frequency (min):</label>
+      <input type="minutes" class="form-control" id="frequency" placeholder="mm">
+    </div>
+    <button type="submit" class="btn btn-primary clearfix" id="form-submit">Submit</button>
+  </div>
+  </form>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>

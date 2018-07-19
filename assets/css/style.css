@@ -1,0 +1,39 @@
+body {
+    margin: 25px;
+    background-image: url("../images/background.jpg");
+    margin-bottom: 60px;
+}
+
+#form-submit {
+    float: right;
+}
+
+.table {
+    background-color: white;
+}
+
+.form-group {
+    background-color: rgb(0, 113, 128);
+}
+
+h3 {
+    color: maroon;
+}
+
+th {
+    font-size: 20px;
+    background-color:rgb(0, 113, 128);;
+}
+
+.container-fluid {
+    background-color: white;
+    padding: 20px;
+    border: solid 1px gold;
+    border-radius: 10px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
